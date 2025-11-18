@@ -2,7 +2,7 @@ name: Deploy HTML Files to AppServiceCMST386
 on:
   push:
     branches:
-      -main
+      - main
 jobs:
     build-and-deploy:
       runs-on: window-latest
