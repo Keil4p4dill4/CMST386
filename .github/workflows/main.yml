@@ -11,6 +11,6 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v1
       with:
-        app-name: 'CMST-Kpadill10'
+        app-name: 'CMST-Kpadilla10'
         slot-name: 'production'
         publish-profile: ${{ secrets.AppServiceCMST386 }}
