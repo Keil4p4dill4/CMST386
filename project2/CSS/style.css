@@ -1,0 +1,51 @@
+body {
+    font-family: cooperplate;
+    margin: 0;
+    background: linear-gradient(to right, hsl(240, 5%, 67%), hsl(312, 24%, 79%));;
+    text-align: center;
+}
+
+#image{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 55%;
+ border-radius: 60%
+}
+
+
+h1{
+ text-align: center;
+ font-family: Papyrus;
+ font-weight: lighter;
+}
+
+
+h2{
+ text-align: center;
+ font-family: Papyrus;
+ font-weight: lighter;
+}
+
+header {
+    background: #275004;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
