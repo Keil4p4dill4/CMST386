@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="HTML">
+   <meta name="author" content="Keila Padilla">
+  <title>Preprocessing — Client & Server</title>
+  <!-- Google Fonts Below -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a id="top"></a>
+
+
+<header>
+  <div class="nav-top">
+    <h1>Preprocessing</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+      </ul>
+    </nav>
+  </div>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="project3.html">Project 3</a></li>
+    </ol>
+  </nav>
+</header>
+<main>
+   <section>
+    <h2>Client vs. Server Preprocessing: A Practical Comparison</h2>
+    <br>
+    <p class="big">Client-side preprocessing compiles your <i>SASS</i> or <i>LESS</i> files right in the browser, which makes it easy for quick demos but slows things down for users since their device has to do the extra work. Server-side preprocessing, on the other hand, compiles everything during development or the build process, so users only receive clean, static CSS. This approach is faster, more reliable, and works smoothly with tools like npm, Gulp, and Webpack. For any real project, I definitely prefer server-side compilation because it keeps performance strong and the workflow organized.</p>
+  </section>
+  <br>
+  <br>
+  <br>
+  <section>
+   <h2>The Mechanisms used in SASS</h2>
+   <br>
+   <p class="big">In SASS, variables make your styles easier to update by storing reusable values like colors, spacing, or fonts. For example, using <code>$primary-color: #2b6cb0;</code> lets you change that color in one place and update it across your entire site. Mixins act like reusable style blocks that can take in parameters, which helps you avoid repeating the same code over and over. This is especially useful for things like responsive grids or adding vendor prefixes.</p>
+   <p class="big">Functions allow you to calculate values directly in your styles, such as adjusting colors or performing math. SASS includes built-in functions like <code>lighten()</code>, but you can also create your own. Operators add even more flexibility by letting you do math in your CSS—for instance, <code>width: $base - 2rem;</code> makes your layout more dynamic.</p>
+   <p class="big">Nesting helps you structure your CSS in a way that mirrors your HTML, making it cleaner and easier to read. For example, writing styles like <code>.card { .title { … } }</code> keeps related styles together. Overall, these SASS features make your code more organized, flexible, and a lot easier to maintain across an entire project.</p>
+  </section>
+
+  <p class="back-to-top"><a href="#top">Back to top</a></p>
+
+
+</main>
+<footer>
+  <p>&copy; 2025 Keila Padilla | CMST 386 Project 3 Preprocessing</p>
+</footer>
+</body>
+</html>
