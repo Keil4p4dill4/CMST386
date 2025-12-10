@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* I added my style.less code into my style.css */
+
+html, body{
+	font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	color: #222;
+	background: #f8f9fb;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+ text-align: center;
+ font-weight: lighter;
+ line-height: 1.8; /* double space paragraph */
+}
+
+h2{
+ text-align: center;
+ font-weight: lighter;
+}
+
+h3{
+ text-align: center;
+ font-weight: lighter;
+}
+
+h4{
+ text-align: center;
+ font-weight: lighter;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+header{
+	background: rgb(234, 229, 229);
+	padding: 1rem 1.25rem;
+	border-bottom: 1px solid #e6e9ee;
+}
+
+header .nav-top{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .nav-top h1{ margin: 0; font-size: 1.25rem; }
+
+#menu-toggle{
+	display: none;
+	background: transparent;
+	border: none;
+	font-size: 1.5rem;
+}
+
+header .nav-top .main-nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 1rem;
+}
+
+header .nav-top .main-nav a{
+	text-decoration: none;
+	color: #222;
+	font-weight: 600;
+}
+
+header .breadcrumb{
+	margin-top: .5rem;
+}
+
+header .breadcrumb ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: .5rem;
+	font-size: .9rem;
+	color: #6b7280;
+}
+
+header .breadcrumb ol li a{
+	color: #6b7280;
+	text-decoration: none;
+}
+
+header .breadcrumb ol li:not(:last-child)::after{
+	content: ">";
+	margin: 0 .5rem;
+	color: #cbd5e1;
+}
+
+main{
+	padding: 1.25rem;
+}
+
+main h2{ color: #111827; }
+
+main .reports{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+}
+
+main .reports article{
+	background: white;
+	padding: 1rem;
+	border-radius: 6px;
+	border: 1px solid #eef2f7;
+}
+
+main .cta-wrap{
+	margin-top: 1.25rem;
+	display: flex;
+	justify-content: center;
+}
+
+main .cta{
+	background: linear-gradient(135deg, #9488cc 0%, #ecb8a9 100%);
+	color: white;
+	text-decoration: none;
+	padding: .9rem 1.4rem;
+	border-radius: 999px;
+	font-weight: 700;
+	letter-spacing: .02em;
+	display: inline-block;
+	box-shadow: 0 8px 24px rgba(255,122,24,0.18);
+	transition: transform .15s ease, box-shadow .15s ease;
+}
+
+main .cta:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 12px 30px rgba(255,122,24,0.18);
+}
+
+footer{
+	padding: 1rem;
+	text-align: center;
+	color: #6b7280;
+}
+
+.back-to-top{
+	text-align: right;
+	padding: 1rem;
+}
+
+.back-to-top a{ text-decoration: none; color: #a57e65; }
+
+#main-nav.open{ display: block; }
+
+/* Responsive breakpoints */
+@media (max-width: 900px){
+	main .reports{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px){
+	header .nav-top #menu-toggle{ display: inline-block; }
+	header .nav-top .main-nav{ display: none; }
+	header .nav-top .main-nav.open{ display: block; }
+	header .nav-top .main-nav ul{ flex-direction: column; gap: .5rem; }
+	main .reports{ grid-template-columns: 1fr; }
+	main .cta{ width: 100%; text-align: center; }
+}
+
+.centered-list li{ margin-bottom: .75rem; }
+
+/* Centering utilities — add these classes to your HTML to center content */
+/*
+	.container       - constrains width and centers horizontally (use for page content)
+	.center-block    - centers a block element horizontally (useful for images/forms)
+	.center-text     - centers inline text
+	.center-viewport - centers content both vertically and horizontally in the viewport
+*/
+.container{
+		max-width: 1100px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+}
+
+.center-block{ display: block; margin-left: auto; margin-right: auto; }
+
+.center-text{ text-align: center; }
+
+.center-viewport{
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 1rem; /* keep some breathing room on small screens */
+}

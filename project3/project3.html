@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="HTML">
+ <meta name="author" content="Keila Padilla">
+  <title>Project 3 | Responsive Design & Preprocessing</title>
+  <!-- Google Fonts Below -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a id="top"></a>
+<header>
+   <div class="nav-top">
+     <h1>Project 3</h1>
+     <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">☰</button>
+     <nav id="main-nav" class="main-nav">
+       <ul>
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="project3.html" aria-current="page">Project 3</a></li>
+       </ul>
+     </nav>
+   </div>
+   <!-- Secondary breadcrumb navigation -->
+   <nav class="breadcrumb" aria-label="Breadcrumb">
+     <ol>
+       <li><a href="../index.html">Home</a></li>
+       <li>Project 3</li>
+     </ol>
+   </nav>
+</header>
+<main>
+<h2>Learning Something <i>New</i> — Everyday</h2>
+<br>
+  <img id="image" class="center-block" src="imgs/learning.jpg" alt="learning">
+<br>
+<br>
+<section>
+    <h3>The Importance of Responsive Design and Its Impact on Users</h3>
+<br>
+    <p class="big">I always design for people first — responsive design makes sure my site looks and works great on any device, from big desktop monitors to tiny phones. When a site adapts to the user’s screen it improves readability, speeds up task completion, and reduces frustration. That means visitors stay longer, engage more, and are more likely to convert (shop, sign up, or contact). Responsive design directly affects accessibility, brand trust, and the overall user experience.</p>
+  </section>
+<section>
+<br>
+<br>
+   <h3>Top 3 Reports for Understanding Audience Behavior</h3>
+   <br>
+   <div class="reports">
+     <article>
+       <h4>Page/Content Performance Report</h4>
+       <p class="big">This report shows which pages users visit most, how much time they spend on each page, and bounce rates. It tells me what content resonates and what needs improvement. If a product or article page has low time-on-page or high exits, I know to update content, calls-to-action, or layout.</p>
+     </article>
+     <article>
+       <h4>Device &amp; Screen Size Report</h4>
+       <p>Knowing whether visitors use phones, tablets, or desktops (and their screen sizes) helps me prioritize responsive breakpoints and adjust layouts/images. If most traffic is mobile, I’ll optimize loading performance and simplify navigation for touch.</p>
+     </article>
+     <article>
+       <h4>Conversion Funnel &amp; Behavior Flow Report</h4>
+       <p class="big">This shows the steps users take toward a conversion (like adding to cart → checkout) and where they drop off. Behavior flow visualizes typical paths through the site. These reports reveal blockers in the user journey so I can tweak form fields, CTA placement, or page speed to increase conversions.</p>
+     </article>
+   </div>
+
+   <div class="cta-wrap">
+     <a class="cta" href="preprocessing.html">Learn Preprocessing</a>
+   </div>
+  </section>
+</main>
+<br>
+<footer>
+  <p>&copy; 2025 Keila Padilla | CMST 386 Project 3</p>
+</footer>
+<script>
+// Simple hamburger toggle below
+const btn = document.getElementById('menu-toggle');
+const nav = document.getElementById('main-nav');
+btn.addEventListener('click', () => {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>
