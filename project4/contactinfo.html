@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Keila Padilla">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/1apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/padi.ico">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="project4.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="collabs.html">Collaborations</a></li>
+                <li><a href="photographystyle.html">Photography Styles</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="sessions.html">Photography Lessons</a></li>
+                <li><a href="contactinfo.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="site-content" id="main">
+        <section style="max-width:800px;margin:28px auto;padding:0 14px;">
+            <h1><i>Contact Us</i></h1>
+            <p><i>If you have any questions please send them our way</i></p>
+            
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Name <span class="sr-only">(required)</span></label>
+                    <div class="input-with-icon">
+                        <span class="icon" aria-hidden="true">👤</span>
+                        <input id="name" name="name" type="text" required placeholder="Full name">
+                    </div>
+                    <div class="error" id="error-name" aria-live="polite"></div>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email<span class="sr-only">(required)</span></label>
+                    <div class="input-with-icon">
+                        <span class="icon" aria-hidden="true">📧</span>
+                        <input id="email" name="email" type="email" required placeholder="keila@gmail.com">
+                    </div>
+                    <div class="error" id="error-email" aria-live="polite"></div>
+                </div>
+
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <div class="input-with-icon">
+                        <span class="icon" aria-hidden="true">📝</span>
+                        <input id="subject" name="subject" type="text" placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message<span class="sr-only">(required)</span></label>
+                    <div class="input-with-icon">
+                        <span class="icon" aria-hidden="true">💬</span>
+                        <textarea id="message" name="message" rows="6" required placeholder="Questions/Concerns"></textarea>
+                    </div>
+                    <div class="error" id="error-message" aria-live="polite"></div>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" id="submitBtn">Send Message</button>
+                    <div id="formStatus" class="form-status" aria-live="polite"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+    <script src="js/site.js" defer></script>
+    <footer>
+    <p id="currentDateTime"></p>
+    </footer>
+</body>
+</html>
