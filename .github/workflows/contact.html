@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleContact">Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">
+        Skip to Main Content
+    </a>
+
+    <header class="site-header">
+
+        <div class="header-left">
+            <span class="site-title" data-i18n="siteTitle">
+                The Resource Hub
+            </span>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" class="active" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" data-i18n="navA11y">Accessibility & Inclusive Design</a></li>
+                <li><a href="security.html" data-i18n="navSecurity">Web Application Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Web Optimization</a></li>
+                <li><a href="responsive.html" data-i18n="navResponsive">Responsive Web Design</a></li>
+                <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+
+            <div class="lang-selector-wrapper">
+                <label for="langSelect" class="sr-only">
+                    Select Language
+                </label>
+
+                <select id="langSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+
+            <button
+                id="themeToggle"
+                class="theme-toggle-btn"
+                aria-label="Toggle Light/Dark Theme"
+                title="Toggle Light/Dark Theme">
+
+                <span class="mode-icon" aria-hidden="true">🌓</span>
+            </button>
+        </div>
+    </header>
+    <!-- Search Handle Area -->
+    <section
+        class="search-banner"
+        aria-label="Internal Resource Directory Engine">
+
+        <div class="search-inner-container">
+
+            <form
+                role="search"
+                id="siteSearchForm"
+                class="search-flex-form">
+
+                <label
+                    for="siteSearchInput"
+                    class="sr-only"
+                    data-i18n="searchLabel">Search internal knowledge repository topics</label>
+
+                <input
+                    type="search"
+                    id="siteSearchInput"
+                    autocomplete="off"
+                    placeholder="What are you looking for?"
+                    data-i18n-placeholder="searchPlaceholder">
+
+                <button
+                    type="submit"
+                    class="search-submit-btn"
+                    data-i18n="searchBtn">Search</button>
+            </form>
+
+            <div
+                id="searchAutocompleteOutput"
+                class="autocomplete-suggestions-box"
+                hidden>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content" class="main-layout-container">
+
+        <article class="content-card-board contact-form-card">
+
+            <h1 data-i18n="contactTitle">
+                Contact Us
+            </h1>
+
+            <p data-i18n="contactIntro">We would love to hear from you, your feedback is important to us!</p>
+            <form
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+                class="contact-form">
+
+                <div class="group">
+
+                    <label
+                        for="email"
+                        data-i18n="emailLabel">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </div>
+                <div class="group">
+
+                    <label
+                        for="firstName"
+                        data-i18n="firstNameLabel">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        autocomplete="given-name"
+                        required>
+                </div>
+                <div class="group">
+
+                    <label
+                        for="lastName"
+                        data-i18n="lastNameLabel">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        autocomplete="family-name"
+                        required>
+                </div>
+                <div class="group">
+
+                    <label
+                        for="techRole"
+                        data-i18n="techRoleLabel">
+                        What role in Tech are you interested in?
+                    </label>
+
+                    <select
+                        id="techRole"
+                        name="techRole"
+                        required>
+
+                        <option value=""
+                                data-i18n="techRoleDefault">
+                            Select a role
+                        </option>
+
+                        <option value="UX Design"
+                                data-i18n="roleUx">
+                            UX Design
+                        </option>
+
+                        <option value="Web Development"
+                                data-i18n="roleWebDevelopment">
+                            Web Development
+                        </option>
+
+                        <option value="Graphic Design"
+                                data-i18n="roleGraphicDesign">
+                            Graphic Design
+                        </option>
+
+                        <option value="Cybersecurity"
+                                data-i18n="roleCybersecurity">
+                            Cybersecurity
+                        </option>
+
+                        <option value="Web Accessibility"
+                                data-i18n="roleAccessibility">
+                            Web Accessibility
+                        </option>
+
+                        <option value="Web Optimization"
+                                data-i18n="roleOptimization">
+                            Web Optimization
+                        </option>
+
+                        <option value="Responsive Web Design"
+                                data-i18n="roleResponsive">
+                            Responsive Web Design
+                        </option>
+
+                        <option value="Other"
+                                data-i18n="roleOther">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <fieldset class="group">
+
+                    <legend data-i18n="enjoyQuestion">
+                        Did you enjoy this website?
+                    </legend>
+
+                    <div class="radio-group">
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="enjoyedWebsite"
+                                value="Yes"
+                                required>
+
+                            <span data-i18n="yesOption">
+                                Yes
+                            </span>
+                        </label>
+
+                        <label>
+
+                            <input
+                                type="radio"
+                                name="enjoyedWebsite"
+                                value="No">
+
+                            <span data-i18n="noOption">
+                                No
+                            </span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="group">
+
+                    <label
+                        for="feedback"
+                        data-i18n="feedbackLabel">
+                        Feedback
+                    </label>
+
+                    <textarea
+                        id="feedback"
+                        name="feedback"
+                        rows="7"
+                        placeholder="Tell me all your thoughts!"
+                        data-i18n-placeholder="feedbackPlaceholder">
+                    </textarea>
+                </div>
+
+                <button
+                    type="submit"
+                    class="primary-action-cta-button form-submit-button"
+                    data-i18n="submitBtn">
+                    Submit
+                </button>
+            </form>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

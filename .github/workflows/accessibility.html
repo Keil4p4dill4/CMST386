@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleA11y">Accessibility & Inclusive Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Content */
+        .content-card-board {
+            background-color: var(--color-surface-container);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--color-burnt-orange-ui);
+        }
+        .content-card-board h2 {
+            color: var(--color-burnt-orange-ui);
+            margin-bottom: 1rem;
+        }
+        .impairment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .sub-data-block {
+            background: rgba(0,0,0,0.04);
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-left"><span class="site-title" data-i18n="siteTitle">WebDev Hub</span></div>
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" class="active" data-i18n="navA11y">Accessibility</a></li>
+                <li><a href="security.html" data-i18n="navSecurity">Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Optimization</a></li>
+                <li><a href="responsive.html" data-i18n="navResponsive">Responsive Design</a></li>
+                <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <select id="langSelect"><option value="en">English</option><option value="es">Español</option></select>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle structural dark and light configuration mode" title="Toggle Light/Dark Theme"><span class="mode-icon" aria-hidden="true">🌓</span></button>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-layout-container">
+        <article class="content-card-board">
+            <h2>Accessibility & Inclusive Design: Build a Web Everyone Can Enter</h2>
+            <p>Inclusive web application design provides equitable system interactions for individuals experiencing varied situational or long-term operational challenges.</p>
+            <br>
+            <div class="impairment-grid">
+                <div class="sub-data-block">
+                    <h3><u>Visual Impairments</u></h3>
+                    <p>Requires structured semantic HTML elements, high default text color contrast ratios, and descriptive aria tags for screen reader text translation output engines.</p>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Auditory Impairments</u></h3>
+                    <p>Requires descriptive synchronous caption integrations, complete written structural transcript mapping for multi-media visual or video tracks, and visual notification confirmations.</p>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Keyboard Navigation</u></h3>
+                    <p>Requires total structural interface control using keyboard inputs exclusively (Tab, Shift+Tab, Enter, Space). Forbids input traps and mandates prominent focus indicator rings.</p>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Cognitive Impairments</u></h3>
+                    <p>Demands logical layout organization configurations, predictable content navigation behaviors, clear plain language structure definitions, and minimal flashing visual distractions.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="content-card-board">
+            <h2>Video for Visual Learners</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9lamRan7VpY?si=0W-Ld_hqfpk20adW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleHome">The Resource Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to Main Content</a>
+
+    <header class="site-header">
+        <div class="header-left">
+            <span class="site-title" data-i18n="siteTitle">The Resource Hub</span>
+        </div>
+        
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" class="active" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" data-i18n="navA11y">Accessibility</a></li>
+                <li><a href="security.html" data-i18n="navSecurity">Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Optimization</a></li>
+                <li><a href="responsive.html" data-i18n="navResponsive">Responsive Design</a></li>
+                <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-controls">
+            <div class="lang-selector-wrapper">
+                <label for="langSelect" class="sr-only">Select Language</label>
+                <select id="langSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle structural dark and light configuration mode" title="Toggle Light/Dark Theme"><span class="mode-icon" aria-hidden="true">🌓</span></button>
+        </div>
+    </header>
+        <!-- Search Button Area-->
+    <section class="search-banner" aria-label="Internal Resource Directory Engine">
+        <div class="search-inner-container">
+            <form role="search" id="siteSearchForm" class="search-flex-form">
+                <label for="siteSearchInput" class="sr-only" data-i18n="searchLabel">Search internal knowledge repository topics</label>
+                <input type="search" id="siteSearchInput" autocomplete="off" placeholder="What are you looking for?" data-i18n-placeholder="searchPlaceholder">
+                <button type="submit" class="search-submit-btn" data-i18n="searchBtn">Search</button>
+            </form>
+            <div id="searchAutocompleteOutput" class="autocomplete-suggestions-box" hidden></div>
+        </div>
+    </section>
+    <main id="main-content" class="main-layout-container">
+        <header class="hero-intro-block">
+            <h1 data-i18n="mainGreeting">Welcome to The Resource Hub!</h1>
+            <br>
+            <p data-i18n="mainSubtext">Whether you are beginning your web design journey or looking for ways to strengthen your existing skills, this resource hub brings together practical concepts, research, techniques, and tools to help turn good websites into great experiences.</p>
+            <br><br>
+            <p data-i18n="mainSubtext2">The web is more than colors, images, buttons, and code. A successful website should understand its users, welcome people with different abilities and needs, protect information, load efficiently, and adapt to whatever device appears on the screen. In other words, a website should work for people instead of making people work for it.</p>
+            <br><br>
+            <p data-i18n="mainSubtext3">Explore the five topics below to discover the building blocks of thoughtful web development.</p>
+        </header>
+        <br>
+        <br>
+        <section class="interactive-grid-showcase" aria-label="Core Technical Subpage Directories">
+            <a href="ux.html" class="interactive-circle-card" aria-describedby="ux-desc">
+                <div class="circle-inner-content">
+                    <span class="circle-title" data-i18n="circleUxTitle">UX Design</span>
+                </div>
+            </a>
+            <a href="accessibility.html" class="interactive-circle-card" aria-describedby="a11y-desc">
+                <div class="circle-inner-content">
+                    <span class="circle-title" data-i18n="circleA11yTitle">Accessibility & Inclusive Design</span>
+                </div>
+            </a>
+            <a href="security.html" class="interactive-circle-card" aria-describedby="sec-desc">
+                <div class="circle-inner-content">
+                    <span class="circle-title" data-i18n="circleSecTitle">Web Application Security</span>
+                </div>
+            </a>
+            <a href="optimization.html" class="interactive-circle-card" aria-describedby="opt-desc">
+                <div class="circle-inner-content">
+                    <span class="circle-title" data-i18n="circleOptTitle">Web Optimization</span>
+                </div>
+            </a>
+            <a href="responsive.html" class="interactive-circle-card" aria-describedby="resp-desc">
+                <div class="circle-inner-content">
+                    <span class="circle-title" data-i18n="circleRespTitle">Responsive Web Design</span>
+                </div>
+            </a>
+            <a href="resources.html" class="interactive-circle-card" aria-describedby="res-desc">
+                <div class="circle-inner-content">
+                    <span class="circle-title" data-i18n="circleResTitle">Resources</span>
+                </div>
+            </a>
+        </section>
+             <div class="sr-only">
+            <p id="ux-desc">Navigates to UX Design rules and developmental core frameworks.</p>
+            <p id="a11y-desc">Navigates to inclusive accessibility guidelines and multi-impairment documentation.</p>
+            <p id="sec-desc">Navigates to web application security and foundational CIA triad configurations.</p>
+            <p id="opt-desc">Navigates to frontend website performance management and metrics benchmarks.</p>
+            <p id="resp-desc">Navigates to fluid mobile layouts, flexbox structures, and media queries.</p>
+            <p id="res-desc">Navigates to educational automated validation links, Lighthouse guidelines, and tools.</p>
+        </div>
+        <br>
+        
+        <footer class="footer-action-banner">
+            <a href="contact.html" class="primary-action-cta-button" data-i18n="bottomContactBtn">Contact Us</a>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

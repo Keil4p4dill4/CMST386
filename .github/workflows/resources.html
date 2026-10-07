@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleResources">Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Content */
+        .content-card-board {
+            background-color: var(--color-surface-container);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--color-burnt-orange-ui);
+        }
+        .content-card-board h2 {
+            color: var(--color-burnt-orange-ui);
+            margin-bottom: 1rem;
+        }
+        .impairment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .sub-data-block {
+            background: rgba(0,0,0,0.04);
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-left"><span class="site-title" data-i18n="siteTitle">WebDev Hub</span></div>
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" data-i18n="navA11y">Accessibility</a></li>
+                <li><a href="security.html" data-i18n="navSecurity">Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Optimization</a></li>
+                <li><a href="responsive.html" data-i18n="navResponsive">Responsive Design</a></li>
+                <li><a href="resources.html" class="active" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <select id="langSelect"><option value="en">English</option><option value="es">Español</option></select>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle structural dark and light configuration mode" title="Toggle Light/Dark Theme"><span class="mode-icon" aria-hidden="true">🌓</span></button>
+        </div>
+    </header>
+
+        <article class="content-card-board">
+            <h2>Resources</h2>
+            <p><strong><u>UX Design:</u></strong></p>
+            <br>
+            <ul>
+                <li>Nielsen, J. (1994, April 24). 10 usability heuristics for user interface design. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/</li>
+                <li>Nielsen, J. (2012, January 3). Usability 101: Introduction to usability. Nielsen Norman Group. https://www.nngroup.com/articles/usability-101-introduction-to-usability/</li>
+                <li>Norman, D., & Nielsen, J. (1998, August 8). The definition of user experience (UX). Nielsen Norman Group. https://www.nngroup.com/articles/definition-user-experience/</li>
+            </ul>
+            <br>
+            <p><strong><u>Accessibility & Inclusive Design:</u></strong></p>
+            <br>
+            <ul>
+                <li>World Wide Web Consortium. (n.d.). Web Content Accessibility Guidelines (WCAG) 2 overview. Web Accessibility Initiative. Retrieved October 2, 2026, from https://www.w3.org/WAI/standards-guidelines/wcag/</li>
+                <li>World Wide Web Consortium. (2026, February 3). Introduction to web accessibility. Web Accessibility Initiative. https://www.w3.org/WAI/fundamentals/accessibility-intro/</li>
+                <li>World Wide Web Consortium. (2016, May 6). Accessibility, usability, and inclusion. Web Accessibility Initiative. https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/</li>
+            </ul>
+            <br>
+            <p><strong><u>Web Application Security:</u></strong></p>
+            <br>
+            <ul>
+                <li>OWASP Foundation. (2025). OWASP Top 10. https://owasp.org/projects/top-ten</li>
+                <li>OWASP Foundation. (2025). OWASP Top 10. OWASP Developer Guide. https://devguide.owasp.org/en/07-training-education/05-top-ten/</li>
+            </ul>
+            <br>
+            <p><strong><u>Web Optimization:</u></strong></p>
+            <br>
+            <ul>
+                <li>Google. (n.d.). Web performance. web.dev. Retrieved October 2, 2026, from https://web.dev/performance/</li>
+                <li>Google. (n.d.). PageSpeed Insights. Retrieved October 2, 2026, from https://pagespeed.web.dev/</li>
+                <li>MDN Contributors. (2025, April 11). HTML performance optimization. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML</li>
+            </ul>
+            <br>
+            <p><strong><u>Responsive Web Design:</u></strong></p>
+            <br>
+            <ul>
+                <li>MDN Contributors. (n.d.). Responsive web design. MDN Web Docs. Retrieved October 2, 2026, from https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design</li>
+                <li>LePage, P., & Andrew, R. (2019). Responsive web design basics. web.dev. https://web.dev/articles/responsive-web-design-basics</li>
+                <li>MDN Contributors. (2025, April 11). HTML performance optimization. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/HTML</li>
+            </ul>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

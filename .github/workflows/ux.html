@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleUx">UX Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Content */
+        .content-card-board {
+            background-color: var(--color-surface-container);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--color-burnt-orange-ui);
+        }
+        .content-card-board h2 {
+            color: var(--color-burnt-orange-ui);
+            margin-bottom: 1rem;
+        }
+        .impairment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .sub-data-block {
+            background: rgba(0,0,0,0.04);
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-left"><span class="site-title" data-i18n="siteTitle">The Resource Hub</span></div>
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" class="active" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" data-i18n="navA11y">Accessibility</a></li>
+                <li><a href="security.html" data-i18n="navSecurity">Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Optimization</a></li>
+                <li><a href="responsive.html" data-i18n="navResponsive">Responsive Design</a></li>
+                <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <select id="langSelect"><option value="en">English</option><option value="es">Español</option></select>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle structural dark and light configuration mode" title="Toggle Light/Dark Theme"><span class="mode-icon" aria-hidden="true">🌓</span></button>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-layout-container">
+        <article class="content-card-board">
+            <h2>UX Design: Designing for Humans, Not Just Screens</h2>
+            <p>A website can look beautiful and still be frustrating to use. Great colors, typography, and animations mean little if users cannot figure out what to do next.
+                <br>
+            User Experience (UX) design focuses on making websites, apps, and digital products useful, understandable, and enjoyable. It involves research, information architecture, wireframing, prototyping, usability testing, and continuous improvement.</p>
+                <br>
+            
+            <div class="impairment-grid">
+                <div class="sub-data-block">
+                    <h3>Start with the User</h3>
+                    <ul>
+                        <li>Who are the users?</li>
+                        <li>What are they trying to accomplish?</li>
+                        <li>What might confuse or frustrate them?</li>
+                        <li>What would make the experience easier?</li>
+                    </ul>
+                </div>
+                <div class="sub-data-block">
+                    <h3>Make it Easy to Navigate</h3>
+                    <p>Information architecture organizes content so users can quickly find what they need.</p>
+                    <p>Clear navigation might look like: Home > Services > Portfolio > About > Contact</p>
+                    <p>Good UX gives a website personality without turning it into a treasure hunt.</p>
+                </div>
+                <div class="sub-data-block">
+                    <h3>Design, Test, Improve!</h3>
+                    <p>Wireframes help designers plan a page's structure before adding visual details. Prototypes allow designers to test interactions before development begins.</p>
+                    <p>Then comes usability testing, where real users try tasks while designers observe what works and what causes confusion.</p>
+                    <p>Jakob Nielsen's 10 Usability Heuristics can also help identify problems involving navigation, consistency, errors, and user control.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="content-card-board">
+            <h2>Video for Visual Learners</h2>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/ODpB9-MCa5s?si=ijd03eGK3Ass1hiO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

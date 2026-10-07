@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleResponsive">Responsive Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Content */
+        .content-card-board {
+            background-color: var(--color-surface-container);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--color-burnt-orange-ui);
+        }
+        .content-card-board h2 {
+            color: var(--color-burnt-orange-ui);
+            margin-bottom: 1rem;
+        }
+        .impairment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .sub-data-block {
+            background: rgba(0,0,0,0.04);
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-left"><span class="site-title" data-i18n="siteTitle">WebDev Hub</span></div>
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" data-i18n="navA11y">Accessibility</a></li>
+                <li><a href="security.html" data-i18n="navSecurity">Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Optimization</a></li>
+                <li><a href="responsive.html" class="active" data-i18n="navResponsive">Responsive Design</a></li>
+                <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <select id="langSelect"><option value="en">English</option><option value="es">Español</option></select>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle structural dark and light configuration mode" title="Toggle Light/Dark Theme"><span class="mode-icon" aria-hidden="true">🌓</span></button>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-layout-container">
+        <article class="content-card-board">
+            <h2>Responsive Web Design: One Website, Many Screens</h2>
+            
+            <div class="impairment-grid">
+                <div class="sub-data-block">
+                    <br>
+                    <h3>Websites live on phones, tablets, laptops, and desktops. Responsive Web Design (RWD) creates one flexible website that adapts to different screens.</h3>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Think Flexible</u></h3>
+                    <br>
+                    <p>Layouts can change based on available space:</p>
+                    <p>Desktop: Three columns  Mobile: One column</p>
+                    <p>Tools like Flexbox, CSS Grid, media queries, and clamp() help content resize, stack, and reorganize.</p>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Design for Real Users</u></h3>
+                    <br>
+                    <p>Mobile first design prioritizes essential content. Text, images, buttons, and menus should remain readable, fast, and easy to use across devices.</p>
+                    <p>If someone needs surgeon level precision to tap your button, it probably needs some attention.</p>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Test Everywhere</u></h3>
+                    <br>
+                    <p>Check different screen sizes and devices for:</p>
+                    <br>
+                    <ul>
+                        <li>Tiny text</li>
+                        <li>Broken navigation</li>
+                        <li>Horizontal scrolling</li>
+                        <li>Overlapping content</li>
+                        <li>Difficult buttons</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="content-card-board">
+            <h2>Video for Visual Learners</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oNSX21dh6kw?si=1sVowGImEhaXL81U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="docTitleSecurity">Web Application Security</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS Content */
+        .content-card-board {
+            background-color: var(--color-surface-container);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--color-burnt-orange-ui);
+        }
+        .content-card-board h2 {
+            color: var(--color-burnt-orange-ui);
+            margin-bottom: 1rem;
+        }
+        .impairment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .sub-data-block {
+            background: rgba(0,0,0,0.04);
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="skipToContent">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-left"><span class="site-title" data-i18n="siteTitle">WebDev Hub</span></div>
+        <nav class="site-nav" aria-label="Primary Site Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="navHome">Home</a></li>
+                <li><a href="ux.html" data-i18n="navUx">UX Design</a></li>
+                <li><a href="accessibility.html" data-i18n="navA11y">Accessibility</a></li>
+                <li><a href="security.html" class="active" data-i18n="navSecurity">Security</a></li>
+                <li><a href="optimization.html" data-i18n="navOpt">Optimization</a></li>
+                <li><a href="responsive.html" data-i18n="navResponsive">Responsive Design</a></li>
+                <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <select id="langSelect"><option value="en">English</option><option value="es">Español</option></select>
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle structural dark and light configuration mode" title="Toggle Light/Dark Theme"><span class="mode-icon" aria-hidden="true">🌓</span></button>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-layout-container">
+        <article class="content-card-board">
+            <h2>Web Application Security: Build It Like Someone Will Try to Break It</h2>
+            <p>A beautiful, fast website means little if its security has a giant crack in the door.</p>
+            <br>
+            <p>Web application security protects websites, users, systems, and sensitive information from attacks and unauthorized access.</p>
+            <br>
+            <div class="impairment-grid">
+                <div class="sub-data-block">
+                    <h3><u>Think <i>Security</i> from the start</u></h3>
+                    <br>
+                    <p>Before building, ask yourself:</p>
+                    <br>
+                    <ul>
+                        <li>What information are we collecting?</li>
+                        <li>Who should access it?</li>
+                        <li>How are passwords protected?</li>
+                    </ul>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>The CIA Triad</u></h3>
+                    <br>
+                    <p>Security focuses on three goals:</p>
+                    <br>
+                    <ul>
+                        <li><strong>Confidentiality:</strong> Keep information private.</li>
+                        <br>
+                        <li><strong>Integrity:</strong> Keep information accurate and protected.</li>
+                        <br>
+                        <li><strong>Availability:</strong> Keep systems accessible when needed.</li>
+                    </ul>
+                </div>
+                <div class="sub-data-block">
+                    <h3><u>Know the Risks</u></h3>
+                    <br>
+                    <p>The OWASP Top 10 highlights common web application risks, including broken access control, security misconfiguration, injection, authentication failures, and software or data integrity failures.</p>
+                    <br>
+                    <p>A few important habits can make a big difference:</p>
+                    <br>
+                    <ul>
+                        <li>Treat user input as untrusted.</li>
+                        <li>Use HTTPS.</li>
+                        <li>Protect accounts with strong authentication.</li>
+                        <li>Keep software and plugins updated</li>
+                        <li>Collect only necessary personal information.</li>
+                        <li>Check third party services carefully.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="content-card-board">
+            <h2>Video for Visual Learners</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zwdp7o5kzf8?si=VtIbNnot0hYi7X93" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
